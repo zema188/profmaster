@@ -1,0 +1,20 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    flex-wrap: wrap;
+    @media (max-width: 539px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    &__item {
+        color: #3d3d3d;
+        &:not(:last-child) {
+            &::after {
+                content: "/";
+            }
+        }
+    }
+}
